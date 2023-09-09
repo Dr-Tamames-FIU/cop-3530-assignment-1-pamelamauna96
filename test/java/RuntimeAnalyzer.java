@@ -26,12 +26,20 @@ public class RuntimeAnalyzer {
             totalAssignmentStatement=0;
         }
     }
-
+/**
+ * 
+ * @param arraySize the size of the array to generate 
+ * @return an array of random integers
+ */
     public static int[] GenerateArray (int arraySize)
     {
         int[] array = new int[arraySize];
        
         //TODO
+        for(int i = 0; i < arraySize; i++)
+        {
+            array[i] = (int)(Math.random() * (99 - (-10) + 1) + (-10));
+        }
 
         return array;
     }
